@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../styles/index.css"/>
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<body>
+		hello   ssssssssssssssssssss    nihaoaaaaaaaaaaaaaa
+	</body>
+	<script type="text/javascript">
+		var num = 1;
+		document.onclick = function(){
+			$.ajax({
+				url : "https://localhost:8848/listmore?pageNo="+num+"&pageSize=15",
+				success : function(data){
+					console.log(data);
+					num++;
+				}
+			})
+			
+		}
+	</script>
+</html>
